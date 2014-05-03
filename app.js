@@ -4,7 +4,7 @@ var fs = require('fs');
 var express = require('express');
 var app = express();
 
-var port = 1337;
+var port = Number(process.env.PORT || 1337);
 var url = "http://graph.facebook.com/NounenRena/photos?type=uploaded";
 var url2 = "http://graph.facebook.com/ashin555/photos?type=uploaded";
 var url3 = "http://graph.facebook.com/133557833621/photos?type=uploaded";
